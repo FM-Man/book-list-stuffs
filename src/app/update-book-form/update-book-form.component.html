@@ -1,0 +1,26 @@
+<form>
+  <div class="form-outline mb-4 d-flex justify-content-center">
+    <input type="text" id="form2Example1" class="form-control" placeholder="Name of the Book" [(ngModel)]="givenBook.name" [ngModelOptions]="{standalone:true}"/>
+  </div>
+
+  <div class="form-outline mb-4 d-flex justify-content-center">
+    <input type="text" id="form2Example2" class="form-control" placeholder="Writter" [(ngModel)]="givenBook.author" [ngModelOptions]="{standalone:true}"/>
+  </div>
+
+  <div class="form-outline mb-4 d-flex justify-content-center">
+    <input type="number" id="form2Example3" class="form-control" placeholder="Year Published" [(ngModel)]="givenBook.year" [ngModelOptions]="{standalone:true}"/>
+  </div>
+
+  <div class="form-outline mb-4 d-flex justify-content-center">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" [(ngModel)]="givenBook.availability" [ngModelOptions]="{standalone:true}"/>
+      <label class="form-check-label"> Available? </label>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <div class="form-outline mb-4 d-flex justify-content-center">
+    <button type="button" class="btn btn-primary btn-block mb-4" (click)="saveClick()">Save</button>
+  </div>
+
+</form>
